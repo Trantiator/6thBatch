@@ -42,9 +42,7 @@ def getFloat(arr):
     print("Please give the decimal")
     mainMethod()
     
-
-
-          
+    
 def mainMethod():               
     print("\n")
     print("We have two apps for you:")
@@ -79,8 +77,24 @@ def mainMethod():
         print("3.Weight")
         print("4.Data size")
         choice = input("Enter choice(1/2/3/4) or e for exit : ")
-        if(choice == '2'):
-            print("Thanks for choosing converter, \n please Select one operation from below:")
+        
+        if(choice == '1'):
+            print("Thanks for choosing temperature converter, \n please Select one operation from below:")
+            print("1.Celsius to Fahrenheit")
+            print("2.Fahrenheit to Celsius")
+            choice = input("Enter choice(1/2): ")
+            if choice =='1':
+                string1 = input("enter temperature in Celsius")
+                strList = string1.split()
+                print("Temperature in Fahrenheit : " +str((getFloat(strList) * 9/5) + 32))
+            elif choice == '2':
+                string1 = input("enter temperature in Fahrenheit")
+                strList = string1.split()
+                print("Distance in Celsius : " +str((getFloat(strList) -32)* 5/9))
+            else:
+                print("Please give the valid input")
+        elif(choice == '2'):
+            print("Thanks for choosing distance converter, \n please Select one operation from below:")
             print("1.KM to Miles")
             print("2.Miles to KM")
             choice = input("Enter choice(1/2): ")
