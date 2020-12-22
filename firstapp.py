@@ -42,9 +42,7 @@ def getFloat(arr):
     print("Please give the decimal")
     mainMethod()
     
-
-
-          
+    
 def mainMethod():               
     print("\n")
     print("We have two apps for you:")
